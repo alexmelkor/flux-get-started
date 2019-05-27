@@ -8,7 +8,6 @@ metadata:
     flux.weave.works/automated: "false"
     flux.weave.works/tag.chart-image: glob:0.0.*
 spec:
-  releaseName: fs1release
   chart:
     git: ssh://git@github.com/alexmelkor/flux-get-started.git
     ref: master
