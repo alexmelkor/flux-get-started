@@ -1,0 +1,7 @@
+{
+  "name": "first-service",
+  "version": "0.0.1",
+  "health": {
+    "status": "OK"
+  }
+}

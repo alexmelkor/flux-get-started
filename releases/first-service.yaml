@@ -1,0 +1,22 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: basic-chart
+  namespace: demo
+  annotations:
+    flux.weave.works/automated: "false"
+    flux.weave.works/tag.chart-image: glob:0.0.*
+spec:
+  releaseName: basic-chart
+  chart:
+    git: ssh://git@github.com:alexmelkor/flux-get-started.git
+    ref: master
+    path: charts/basic-chart
+  values:
+    image: registry.battery-park.conductor.com/first-demo-service:0.0.1
+    resources:
+      requests:
+        memory: 128Mi
+        cpu: 10m
+    serviceType: ClusterIP
