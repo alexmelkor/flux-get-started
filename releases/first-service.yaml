@@ -14,7 +14,9 @@ spec:
     ref: master
     path: charts/basic-chart
   values:
-    image: registry.battery-park.conductor.com/first-demo-service:0.0.1
+    image:
+      repository: registry.battery-park.conductor.com/first-demo-service
+      tag: 0.0.1
     resources:
       requests:
         memory: 128Mi
