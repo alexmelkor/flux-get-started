@@ -13,6 +13,8 @@ metadata:
     "helm.sh/hook-weight": "-5"
     "helm.sh/hook-delete-policy": before-hook-creation
 spec:
+  backoffLimit: 3
+  activeDeadlineSeconds: 60
   template:
     metadata:
       name: "{{.Release.Name}}"
@@ -25,8 +27,8 @@ spec:
       containers:
       - name: post-install-job
         image: "stedolan/jq"
+        command: [ "/bin/sh", "-c", "--" ]
         args:
           - |
-            # Imagine that it is adequate deploy test
             wget -qO - http://{{ include "basic-chart.fullname" . }}:{{ .Values.service.port }} | jq -r ".health.status" | grep "OK"
 {{ end }}
