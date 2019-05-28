@@ -1,0 +1,1 @@
+{"jobID":"9b064220-a41f-b670-8e6a-1f6567e29462","spec":{"type":"policy","cause":{"Message":"","User":"Oleksii Lesiuk \u003colesiuk@conductor.com\u003e"},"spec":{"demo:helmrelease/fs1name":{"add":{},"remove":{"automated":"true"}}}},"result":null}
