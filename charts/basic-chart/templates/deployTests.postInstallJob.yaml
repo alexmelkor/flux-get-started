@@ -14,7 +14,7 @@ metadata:
     "helm.sh/hook-delete-policy": before-hook-creation
 spec:
   backoffLimit: 3
-  activeDeadlineSeconds: 60
+  activeDeadlineSeconds: 180
   template:
     metadata:
       name: "{{.Release.Name}}"
