@@ -6,7 +6,7 @@ metadata:
   namespace: demo
   annotations:
     flux.weave.works/tag.chart-image: glob:0.0.*
-    flux.weave.works/automated: 'true'
+    flux.weave.works/automated: 'false'
 spec:
   releaseName: fs1name
   chart:
@@ -14,7 +14,6 @@ spec:
     ref: master
     path: charts/basic-chart
   values:
-    fullnameOverride: super-service
     tests:
       enabled: "true"
     image:
