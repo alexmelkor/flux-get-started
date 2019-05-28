@@ -16,7 +16,7 @@ spec:
   values:
     fullnameOverride: super-service
     tests:
-      enabled: true
+      enabled: "true"
     image:
       repository: registry.battery-park.conductor.com/first-demo-service
       tag: 0.0.2
