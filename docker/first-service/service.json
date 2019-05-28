@@ -1,7 +1,7 @@
 {
   "name": "first-service",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "health": {
-    "status": "OK"
+    "status": "FUCK"
   }
 }
