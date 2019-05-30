@@ -17,7 +17,7 @@ spec:
     fullnameOverride: second-service
     image:
       repository: registry.battery-park.conductor.com/second-demo-service
-      tag: 0.0.2
+      tag: 0.0.3
     resources:
       requests:
         memory: 128Mi
