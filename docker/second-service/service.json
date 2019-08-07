@@ -1,7 +1,0 @@
-{
-  "name": "second-service",
-  "version": "0.0.3",
-  "health": {
-    "status": "OK"
-  }
-}
